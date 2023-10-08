@@ -1,0 +1,276 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{select}-{##}",
+ "creation": "2023-09-09 19:00:08.057590",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "master_info_tab",
+  "method_name",
+  "method_group",
+  "column_break_bdcaf",
+  "select",
+  "method_class",
+  "is_whitelist",
+  "app_whitelist",
+  "whitelist_url",
+  "section_break_vlcx5",
+  "description",
+  "column_break_shvzu",
+  "return",
+  "column_break_x8jtq",
+  "common_uses",
+  "section_break_wjgmi",
+  "syntax",
+  "column_break_a8bbq",
+  "parameters_details",
+  "extra",
+  "more_examples_tab",
+  "most_practical_examples",
+  "example_1",
+  "example_2",
+  "example_3",
+  "example_4",
+  "example_5",
+  "theory_examples",
+  "details_tab",
+  "more_description",
+  "details_purposes",
+  "more_tab",
+  "import",
+  "file_path",
+  "related_tab",
+  "related_methods"
+ ],
+ "fields": [
+  {
+   "fieldname": "method_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Method Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Markdown Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "return",
+   "fieldtype": "Markdown Editor",
+   "label": "Return",
+   "length": 100
+  },
+  {
+   "fieldname": "syntax",
+   "fieldtype": "Code",
+   "label": "Syntax",
+   "options": "Python",
+   "width": "50"
+  },
+  {
+   "fieldname": "common_uses",
+   "fieldtype": "Markdown Editor",
+   "label": "Common Uses"
+  },
+  {
+   "fieldname": "theory_examples",
+   "fieldtype": "Markdown Editor",
+   "label": "Theory Examples"
+  },
+  {
+   "fieldname": "most_practical_examples",
+   "fieldtype": "Heading",
+   "label": "Most Practical Examples"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "Select",
+   "options": "Py\nJS"
+  },
+  {
+   "fieldname": "method_group",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Method Group"
+  },
+  {
+   "fieldname": "method_class",
+   "fieldtype": "Data",
+   "label": "Method Class"
+  },
+  {
+   "fieldname": "column_break_bdcaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vlcx5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_a8bbq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "parameters_details",
+   "fieldtype": "Table",
+   "label": "Parameters Details",
+   "options": "Parameters"
+  },
+  {
+   "fieldname": "column_break_shvzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_x8jtq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wjgmi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "master_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Master Info."
+  },
+  {
+   "fieldname": "more_examples_tab",
+   "fieldtype": "Tab Break",
+   "label": "More Examples"
+  },
+  {
+   "fieldname": "example_1",
+   "fieldtype": "Code",
+   "label": "Example 1",
+   "options": "Python"
+  },
+  {
+   "depends_on": "example_1",
+   "fieldname": "example_2",
+   "fieldtype": "Code",
+   "label": "Example 2",
+   "options": "Python"
+  },
+  {
+   "depends_on": "example_2",
+   "fieldname": "example_3",
+   "fieldtype": "Code",
+   "label": "Example 3",
+   "options": "Python"
+  },
+  {
+   "depends_on": "example_3",
+   "fieldname": "example_4",
+   "fieldtype": "Code",
+   "label": "Example 4",
+   "options": "Python"
+  },
+  {
+   "depends_on": "example_4",
+   "fieldname": "example_5",
+   "fieldtype": "Code",
+   "label": "Example 5",
+   "options": "Python"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "more_description",
+   "fieldtype": "Text Editor",
+   "label": "More Description"
+  },
+  {
+   "fieldname": "details_purposes",
+   "fieldtype": "Text Editor",
+   "label": "Details Purposes"
+  },
+  {
+   "fieldname": "extra",
+   "fieldtype": "Text Editor",
+   "label": "extra"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_whitelist",
+   "fieldtype": "Check",
+   "label": "Is whitelist?"
+  },
+  {
+   "fieldname": "more_tab",
+   "fieldtype": "Tab Break",
+   "label": "more"
+  },
+  {
+   "fieldname": "import",
+   "fieldtype": "Data",
+   "label": "Import"
+  },
+  {
+   "fieldname": "file_path",
+   "fieldtype": "Data",
+   "label": "file Path"
+  },
+  {
+   "fieldname": "related_tab",
+   "fieldtype": "Tab Break",
+   "label": "Related"
+  },
+  {
+   "fieldname": "related_methods",
+   "fieldtype": "Table",
+   "label": "Related Methods",
+   "options": "Related Methods"
+  },
+  {
+   "depends_on": "is_whitelist",
+   "fieldname": "app_whitelist",
+   "fieldtype": "Select",
+   "label": "App Whitelist ",
+   "options": "Frappe\nERPNEXT"
+  },
+  {
+   "depends_on": "is_whitelist",
+   "fieldname": "whitelist_url",
+   "fieldtype": "Data",
+   "label": "Whitelist URL"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2023-09-23 10:34:23.330043",
+ "modified_by": "Administrator",
+ "module": "Dev Doc Hub",
+ "name": "Methods",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "method_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

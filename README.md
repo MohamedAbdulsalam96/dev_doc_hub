@@ -1,2 +1,7 @@
-# dev_doc_hub
+## Dev Doc Hub
+
 Development Documentation Hub for frappe
+
+#### License
+
+MIT
